@@ -12,7 +12,7 @@
 
 .sidebar{
     flex: 0.2;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.7);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -28,17 +28,22 @@
 
 
 .image_container{
-    flex: 0.5;
+    flex: 0.7;
     background-image: url('./images/profile.jpg');
-    background-position: 20% 0%;
+    background-position: 30% 0%;
     /* background-repeat: no-repeat; */
-    clip-path:circle();
-    background-size: cover;
+    clip-path:polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%)
+    /* clip-path: circle(); */
+    /* background-position: center; */
+    /* background-size: cover; */
 }
 
 
-.info_container{
-    flex: 0.5;
+.main_container{
+    flex: 0.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 .sidebar_heading{
@@ -65,3 +70,7 @@
     padding: 30px;
     cursor: pointer;
 }
+
+.qualification_container {
+    display: none;
+  }
